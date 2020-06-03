@@ -12,6 +12,8 @@
 		AE031A0398496B0411938A6C /* Pods_calpro_prototype_calpro_prototypeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91B2E3A7F2234E5AF5EF642B /* Pods_calpro_prototype_calpro_prototypeUITests.framework */; };
 		DB1DE81F2487544700A2B5EC /* CurrentPlanScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB1DE81E2487544700A2B5EC /* CurrentPlanScreenViewController.m */; };
 		DB1DE821248756B100A2B5EC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB1DE820248756B100A2B5EC /* GoogleService-Info.plist */; };
+		DB44CED62487ECE500772343 /* UserPlan.m in Sources */ = {isa = PBXBuildFile; fileRef = DB44CED52487ECE500772343 /* UserPlan.m */; };
+		DB44CED92487EDA000772343 /* UserMeal.m in Sources */ = {isa = PBXBuildFile; fileRef = DB44CED82487EDA000772343 /* UserMeal.m */; };
 		DB51341A2483A40A00BAD887 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5134192483A40A00BAD887 /* AppDelegate.m */; };
 		DB51341D2483A40A00BAD887 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DB51341C2483A40A00BAD887 /* SceneDelegate.m */; };
 		DB5134232483A40A00BAD887 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB5134212483A40A00BAD887 /* Main.storyboard */; };
@@ -24,6 +26,13 @@
 		DB5134582483DBE900BAD887 /* DiscoverTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5134572483DBE900BAD887 /* DiscoverTabViewController.m */; };
 		DB5134612483E3BB00BAD887 /* StoreTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5134602483E3BB00BAD887 /* StoreTabViewController.m */; };
 		DB81C9B12487662300925420 /* NewStoreItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB81C9B02487662300925420 /* NewStoreItemViewController.m */; };
+		DB81C9B42487935E00925420 /* DashboardTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB81C9B32487935E00925420 /* DashboardTabViewController.m */; };
+		DB81C9B6248794B600925420 /* DashboardActionSheetUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = DB81C9B5248794B600925420 /* DashboardActionSheetUtility.m */; };
+		DB81C9BA2487973800925420 /* NewWeightEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB81C9B92487973800925420 /* NewWeightEntryViewController.m */; };
+		DB81C9BE2487C05800925420 /* ProfileTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB81C9BD2487C05800925420 /* ProfileTabViewController.m */; };
+		DB81C9C12487C74700925420 /* RegisterScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB81C9C02487C74700925420 /* RegisterScreenViewController.m */; };
+		DB81C9C42487D01700925420 /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB81C9C32487D01700925420 /* SignInViewController.m */; };
+		DB81C9C72487E3C800925420 /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB81C9C62487E3C800925420 /* TabBarViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +65,10 @@
 		DB1DE81D2487544700A2B5EC /* CurrentPlanScreenViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CurrentPlanScreenViewController.h; sourceTree = "<group>"; };
 		DB1DE81E2487544700A2B5EC /* CurrentPlanScreenViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CurrentPlanScreenViewController.m; sourceTree = "<group>"; };
 		DB1DE820248756B100A2B5EC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DB44CED52487ECE500772343 /* UserPlan.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserPlan.m; sourceTree = "<group>"; };
+		DB44CED72487ECFA00772343 /* UserPlan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserPlan.h; sourceTree = "<group>"; };
+		DB44CED82487EDA000772343 /* UserMeal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserMeal.m; sourceTree = "<group>"; };
+		DB44CEDA2487EDAE00772343 /* UserMeal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserMeal.h; sourceTree = "<group>"; };
 		DB5134152483A40A00BAD887 /* calpro_prototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = calpro_prototype.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB5134182483A40A00BAD887 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DB5134192483A40A00BAD887 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -80,6 +93,20 @@
 		DB5134602483E3BB00BAD887 /* StoreTabViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoreTabViewController.m; sourceTree = "<group>"; };
 		DB81C9AF2487662300925420 /* NewStoreItemViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewStoreItemViewController.h; sourceTree = "<group>"; };
 		DB81C9B02487662300925420 /* NewStoreItemViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewStoreItemViewController.m; sourceTree = "<group>"; };
+		DB81C9B22487935E00925420 /* DashboardTabViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DashboardTabViewController.h; sourceTree = "<group>"; };
+		DB81C9B32487935E00925420 /* DashboardTabViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DashboardTabViewController.m; sourceTree = "<group>"; };
+		DB81C9B5248794B600925420 /* DashboardActionSheetUtility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DashboardActionSheetUtility.m; sourceTree = "<group>"; };
+		DB81C9B7248794D100925420 /* DashboardActionSheetUtility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DashboardActionSheetUtility.h; sourceTree = "<group>"; };
+		DB81C9B82487973800925420 /* NewWeightEntryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewWeightEntryViewController.h; sourceTree = "<group>"; };
+		DB81C9B92487973800925420 /* NewWeightEntryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewWeightEntryViewController.m; sourceTree = "<group>"; };
+		DB81C9BC2487C05800925420 /* ProfileTabViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProfileTabViewController.h; sourceTree = "<group>"; };
+		DB81C9BD2487C05800925420 /* ProfileTabViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProfileTabViewController.m; sourceTree = "<group>"; };
+		DB81C9BF2487C74700925420 /* RegisterScreenViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterScreenViewController.h; sourceTree = "<group>"; };
+		DB81C9C02487C74700925420 /* RegisterScreenViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegisterScreenViewController.m; sourceTree = "<group>"; };
+		DB81C9C22487D01700925420 /* SignInViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignInViewController.h; sourceTree = "<group>"; };
+		DB81C9C32487D01700925420 /* SignInViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignInViewController.m; sourceTree = "<group>"; };
+		DB81C9C52487E3C800925420 /* TabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
+		DB81C9C62487E3C800925420 /* TabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +182,24 @@
 				DB1DE81E2487544700A2B5EC /* CurrentPlanScreenViewController.m */,
 				DB81C9AF2487662300925420 /* NewStoreItemViewController.h */,
 				DB81C9B02487662300925420 /* NewStoreItemViewController.m */,
+				DB81C9B22487935E00925420 /* DashboardTabViewController.h */,
+				DB81C9B32487935E00925420 /* DashboardTabViewController.m */,
+				DB81C9B5248794B600925420 /* DashboardActionSheetUtility.m */,
+				DB81C9B7248794D100925420 /* DashboardActionSheetUtility.h */,
+				DB81C9B82487973800925420 /* NewWeightEntryViewController.h */,
+				DB81C9B92487973800925420 /* NewWeightEntryViewController.m */,
+				DB81C9BC2487C05800925420 /* ProfileTabViewController.h */,
+				DB81C9BD2487C05800925420 /* ProfileTabViewController.m */,
+				DB81C9BF2487C74700925420 /* RegisterScreenViewController.h */,
+				DB81C9C02487C74700925420 /* RegisterScreenViewController.m */,
+				DB81C9C22487D01700925420 /* SignInViewController.h */,
+				DB81C9C32487D01700925420 /* SignInViewController.m */,
+				DB81C9C52487E3C800925420 /* TabBarViewController.h */,
+				DB81C9C62487E3C800925420 /* TabBarViewController.m */,
+				DB44CED52487ECE500772343 /* UserPlan.m */,
+				DB44CED72487ECFA00772343 /* UserPlan.h */,
+				DB44CED82487EDA000772343 /* UserMeal.m */,
+				DB44CEDA2487EDAE00772343 /* UserMeal.h */,
 			);
 			path = calpro_prototype;
 			sourceTree = "<group>";
@@ -475,14 +520,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB81C9C42487D01700925420 /* SignInViewController.m in Sources */,
+				DB44CED92487EDA000772343 /* UserMeal.m in Sources */,
 				DB5134582483DBE900BAD887 /* DiscoverTabViewController.m in Sources */,
 				DB5134612483E3BB00BAD887 /* StoreTabViewController.m in Sources */,
 				DB51341A2483A40A00BAD887 /* AppDelegate.m in Sources */,
 				DB51342B2483A40E00BAD887 /* main.m in Sources */,
+				DB81C9BA2487973800925420 /* NewWeightEntryViewController.m in Sources */,
 				DB81C9B12487662300925420 /* NewStoreItemViewController.m in Sources */,
+				DB81C9B42487935E00925420 /* DashboardTabViewController.m in Sources */,
 				DB1DE81F2487544700A2B5EC /* CurrentPlanScreenViewController.m in Sources */,
+				DB81C9BE2487C05800925420 /* ProfileTabViewController.m in Sources */,
+				DB81C9C72487E3C800925420 /* TabBarViewController.m in Sources */,
+				DB81C9C12487C74700925420 /* RegisterScreenViewController.m in Sources */,
+				DB81C9B6248794B600925420 /* DashboardActionSheetUtility.m in Sources */,
 				DB51341D2483A40A00BAD887 /* SceneDelegate.m in Sources */,
 				DB51344F2483A43C00BAD887 /* StartScreenViewController.m in Sources */,
+				DB44CED62487ECE500772343 /* UserPlan.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

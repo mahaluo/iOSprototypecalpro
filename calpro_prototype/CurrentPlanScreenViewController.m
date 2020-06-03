@@ -1,29 +1,27 @@
 //
-//  PlanViewController.m
+//  CurrentPlanScreenViewController.m
 //  calpro_prototype
 //
-//  Created by Max Häggkvist on 31/5/20.
+//  Created by Max Häggkvist on 3/6/20.
 //  Copyright © 2020 Max Häggkvist. All rights reserved.
 //
 
-#import "PlanViewController.h"
+#import "CurrentPlanScreenViewController.h"
 
-@interface PlanViewController ()
+@interface CurrentPlanScreenViewController ()
 {
     NSArray *planMeals;
 }
 @end
 
-@implementation PlanViewController
-
 static NSString * const reuseIdentifier = @"Cell";
 
+@implementation CurrentPlanScreenViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-     planMeals = @[
+    planMeals = @[
      @[@"user_meal_1",
        @"user_meal_2",
        @"user_meal_3",
@@ -32,11 +30,12 @@ static NSString * const reuseIdentifier = @"Cell";
        @"user_meal_6"]];
     
     
-    self.planMealsCollectionView.dataSource = self;
-    self.planMealsCollectionView.delegate = self;
-    [self.planMealsCollectionView setAllowsMultipleSelection:YES];
     
-    self.planImage.image = [UIImage imageNamed:@"user_current_plan"];
+    self.PlanMealsCollectionView.dataSource = self;
+    self.PlanMealsCollectionView.delegate = self;
+    [self.PlanMealsCollectionView setAllowsMultipleSelection:YES];
+    
+    self.PlanImageImageView.image = [UIImage imageNamed:@"user_current_plan"];
 }
 
 /*
@@ -49,11 +48,7 @@ static NSString * const reuseIdentifier = @"Cell";
 }
 */
 
-#pragma mark <UICollectionViewDataSource>
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
 //#warning Incomplete implementation, return the number of items
@@ -79,6 +74,13 @@ static NSString * const reuseIdentifier = @"Cell";
     return cell;
 }
 
+
+#pragma mark <UICollectionViewDataSource>
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
 #pragma mark <UICollectionViewDelegateFlowLayout>
 
 - (CGSize)collectionView:(UICollectionView *)collectionView
@@ -91,4 +93,5 @@ static NSString * const reuseIdentifier = @"Cell";
     return CGSizeMake(cellSize / 2, cellSize / 2);
 
 }
+
 @end

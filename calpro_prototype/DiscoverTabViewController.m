@@ -6,23 +6,24 @@
 //  Copyright © 2020 Max Häggkvist. All rights reserved.
 //
 
-#import "DiscoverViewController.h"
+#import "DiscoverTabViewController.h"
 
 
-@interface DiscoverViewController ()
+@interface DiscoverTabViewController ()
 {
     NSArray *discoverPlans;
 }
 @end
 
-@implementation DiscoverViewController
+@implementation DiscoverTabViewController
 
 static NSString * const reuseIdentifier = @"Cell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
+    NSLog(@"user id from tab bar controller");
+    NSLog(@"%@", _userid);
     
     discoverPlans = @[
     @[@"discover_plan_1",
@@ -102,7 +103,7 @@ static NSString * const reuseIdentifier = @"Cell";
              layout:(UICollectionViewLayout *)collectionViewLayout
   sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
 
-    CGFloat padding = 5;
+    CGFloat padding = 2;
     CGFloat cellSize = collectionView.frame.size.width - padding;
     
     return CGSizeMake(cellSize / 2, cellSize / 2);
