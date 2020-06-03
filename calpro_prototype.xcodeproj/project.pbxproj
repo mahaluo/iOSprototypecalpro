@@ -3,10 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		292FF92ABAE2F4B89F1F53F2 /* Pods_calpro_prototypeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD83E04125672938D79BEC23 /* Pods_calpro_prototypeTests.framework */; };
+		2DFE9EDBE13237E950E988BE /* Pods_calpro_prototype.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FAA43B2CBB044D0944EBD17 /* Pods_calpro_prototype.framework */; };
+		AE031A0398496B0411938A6C /* Pods_calpro_prototype_calpro_prototypeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91B2E3A7F2234E5AF5EF642B /* Pods_calpro_prototype_calpro_prototypeUITests.framework */; };
+		DB1DE81F2487544700A2B5EC /* CurrentPlanScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB1DE81E2487544700A2B5EC /* CurrentPlanScreenViewController.m */; };
+		DB1DE821248756B100A2B5EC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB1DE820248756B100A2B5EC /* GoogleService-Info.plist */; };
 		DB51341A2483A40A00BAD887 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5134192483A40A00BAD887 /* AppDelegate.m */; };
 		DB51341D2483A40A00BAD887 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DB51341C2483A40A00BAD887 /* SceneDelegate.m */; };
 		DB5134232483A40A00BAD887 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB5134212483A40A00BAD887 /* Main.storyboard */; };
@@ -16,8 +21,9 @@
 		DB5134352483A40F00BAD887 /* calpro_prototypeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5134342483A40F00BAD887 /* calpro_prototypeTests.m */; };
 		DB5134402483A40F00BAD887 /* calpro_prototypeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB51343F2483A40F00BAD887 /* calpro_prototypeUITests.m */; };
 		DB51344F2483A43C00BAD887 /* StartScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB51344E2483A43C00BAD887 /* StartScreenViewController.m */; };
-		DB5134582483DBE900BAD887 /* DiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5134572483DBE900BAD887 /* DiscoverViewController.m */; };
-		DB5134612483E3BB00BAD887 /* PlanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5134602483E3BB00BAD887 /* PlanViewController.m */; };
+		DB5134582483DBE900BAD887 /* DiscoverTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5134572483DBE900BAD887 /* DiscoverTabViewController.m */; };
+		DB5134612483E3BB00BAD887 /* StoreTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5134602483E3BB00BAD887 /* StoreTabViewController.m */; };
+		DB81C9B12487662300925420 /* NewStoreItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB81C9B02487662300925420 /* NewStoreItemViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +44,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		13C3D7AB2296024735F79245 /* Pods-calpro_prototypeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-calpro_prototypeTests.debug.xcconfig"; path = "Target Support Files/Pods-calpro_prototypeTests/Pods-calpro_prototypeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3EC0FBA1B25D258485B27F96 /* Pods-calpro_prototype.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-calpro_prototype.debug.xcconfig"; path = "Target Support Files/Pods-calpro_prototype/Pods-calpro_prototype.debug.xcconfig"; sourceTree = "<group>"; };
+		5DF9DF90B283DD2635A21B70 /* Pods-calpro_prototype-calpro_prototypeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-calpro_prototype-calpro_prototypeUITests.debug.xcconfig"; path = "Target Support Files/Pods-calpro_prototype-calpro_prototypeUITests/Pods-calpro_prototype-calpro_prototypeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		86B5682DEB1B9BD67565D9CA /* Pods-calpro_prototypeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-calpro_prototypeTests.release.xcconfig"; path = "Target Support Files/Pods-calpro_prototypeTests/Pods-calpro_prototypeTests.release.xcconfig"; sourceTree = "<group>"; };
+		8966D9C5D0048A881BD103E6 /* Pods-calpro_prototype-calpro_prototypeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-calpro_prototype-calpro_prototypeUITests.release.xcconfig"; path = "Target Support Files/Pods-calpro_prototype-calpro_prototypeUITests/Pods-calpro_prototype-calpro_prototypeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		91B2E3A7F2234E5AF5EF642B /* Pods_calpro_prototype_calpro_prototypeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_calpro_prototype_calpro_prototypeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FAA43B2CBB044D0944EBD17 /* Pods_calpro_prototype.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_calpro_prototype.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8A67AAF97B7AEDD49786329 /* Pods-calpro_prototype.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-calpro_prototype.release.xcconfig"; path = "Target Support Files/Pods-calpro_prototype/Pods-calpro_prototype.release.xcconfig"; sourceTree = "<group>"; };
+		BD83E04125672938D79BEC23 /* Pods_calpro_prototypeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_calpro_prototypeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB1DE81D2487544700A2B5EC /* CurrentPlanScreenViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CurrentPlanScreenViewController.h; sourceTree = "<group>"; };
+		DB1DE81E2487544700A2B5EC /* CurrentPlanScreenViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CurrentPlanScreenViewController.m; sourceTree = "<group>"; };
+		DB1DE820248756B100A2B5EC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DB5134152483A40A00BAD887 /* calpro_prototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = calpro_prototype.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB5134182483A40A00BAD887 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DB5134192483A40A00BAD887 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -56,10 +74,12 @@
 		DB5134412483A40F00BAD887 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB51344D2483A43C00BAD887 /* StartScreenViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StartScreenViewController.h; sourceTree = "<group>"; };
 		DB51344E2483A43C00BAD887 /* StartScreenViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StartScreenViewController.m; sourceTree = "<group>"; };
-		DB5134562483DBE900BAD887 /* DiscoverViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiscoverViewController.h; sourceTree = "<group>"; };
-		DB5134572483DBE900BAD887 /* DiscoverViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiscoverViewController.m; sourceTree = "<group>"; };
-		DB51345F2483E3BB00BAD887 /* PlanViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlanViewController.h; sourceTree = "<group>"; };
-		DB5134602483E3BB00BAD887 /* PlanViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlanViewController.m; sourceTree = "<group>"; };
+		DB5134562483DBE900BAD887 /* DiscoverTabViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiscoverTabViewController.h; sourceTree = "<group>"; };
+		DB5134572483DBE900BAD887 /* DiscoverTabViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiscoverTabViewController.m; sourceTree = "<group>"; };
+		DB51345F2483E3BB00BAD887 /* StoreTabViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoreTabViewController.h; sourceTree = "<group>"; };
+		DB5134602483E3BB00BAD887 /* StoreTabViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoreTabViewController.m; sourceTree = "<group>"; };
+		DB81C9AF2487662300925420 /* NewStoreItemViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewStoreItemViewController.h; sourceTree = "<group>"; };
+		DB81C9B02487662300925420 /* NewStoreItemViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewStoreItemViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DFE9EDBE13237E950E988BE /* Pods_calpro_prototype.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				292FF92ABAE2F4B89F1F53F2 /* Pods_calpro_prototypeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE031A0398496B0411938A6C /* Pods_calpro_prototype_calpro_prototypeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +117,8 @@
 				DB5134332483A40F00BAD887 /* calpro_prototypeTests */,
 				DB51343E2483A40F00BAD887 /* calpro_prototypeUITests */,
 				DB5134162483A40A00BAD887 /* Products */,
+				EFBA7C6FB843C8CAB3018C26 /* Pods */,
+				EE196A7F3C57D745A1767F6A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,6 +135,7 @@
 		DB5134172483A40A00BAD887 /* calpro_prototype */ = {
 			isa = PBXGroup;
 			children = (
+				DB1DE820248756B100A2B5EC /* GoogleService-Info.plist */,
 				DB5134182483A40A00BAD887 /* AppDelegate.h */,
 				DB5134192483A40A00BAD887 /* AppDelegate.m */,
 				DB51341B2483A40A00BAD887 /* SceneDelegate.h */,
@@ -121,10 +147,14 @@
 				DB51342A2483A40E00BAD887 /* main.m */,
 				DB51344D2483A43C00BAD887 /* StartScreenViewController.h */,
 				DB51344E2483A43C00BAD887 /* StartScreenViewController.m */,
-				DB5134562483DBE900BAD887 /* DiscoverViewController.h */,
-				DB5134572483DBE900BAD887 /* DiscoverViewController.m */,
-				DB51345F2483E3BB00BAD887 /* PlanViewController.h */,
-				DB5134602483E3BB00BAD887 /* PlanViewController.m */,
+				DB5134562483DBE900BAD887 /* DiscoverTabViewController.h */,
+				DB5134572483DBE900BAD887 /* DiscoverTabViewController.m */,
+				DB51345F2483E3BB00BAD887 /* StoreTabViewController.h */,
+				DB5134602483E3BB00BAD887 /* StoreTabViewController.m */,
+				DB1DE81D2487544700A2B5EC /* CurrentPlanScreenViewController.h */,
+				DB1DE81E2487544700A2B5EC /* CurrentPlanScreenViewController.m */,
+				DB81C9AF2487662300925420 /* NewStoreItemViewController.h */,
+				DB81C9B02487662300925420 /* NewStoreItemViewController.m */,
 			);
 			path = calpro_prototype;
 			sourceTree = "<group>";
@@ -147,6 +177,29 @@
 			path = calpro_prototypeUITests;
 			sourceTree = "<group>";
 		};
+		EE196A7F3C57D745A1767F6A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9FAA43B2CBB044D0944EBD17 /* Pods_calpro_prototype.framework */,
+				91B2E3A7F2234E5AF5EF642B /* Pods_calpro_prototype_calpro_prototypeUITests.framework */,
+				BD83E04125672938D79BEC23 /* Pods_calpro_prototypeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EFBA7C6FB843C8CAB3018C26 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3EC0FBA1B25D258485B27F96 /* Pods-calpro_prototype.debug.xcconfig */,
+				A8A67AAF97B7AEDD49786329 /* Pods-calpro_prototype.release.xcconfig */,
+				5DF9DF90B283DD2635A21B70 /* Pods-calpro_prototype-calpro_prototypeUITests.debug.xcconfig */,
+				8966D9C5D0048A881BD103E6 /* Pods-calpro_prototype-calpro_prototypeUITests.release.xcconfig */,
+				13C3D7AB2296024735F79245 /* Pods-calpro_prototypeTests.debug.xcconfig */,
+				86B5682DEB1B9BD67565D9CA /* Pods-calpro_prototypeTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -154,9 +207,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DB5134442483A40F00BAD887 /* Build configuration list for PBXNativeTarget "calpro_prototype" */;
 			buildPhases = (
+				F195E70F8C40298BDBA62C35 /* [CP] Check Pods Manifest.lock */,
 				DB5134112483A40A00BAD887 /* Sources */,
 				DB5134122483A40A00BAD887 /* Frameworks */,
 				DB5134132483A40A00BAD887 /* Resources */,
+				9C5AE10AB3D53725CD5B7032 /* [CP] Embed Pods Frameworks */,
+				CA265F1DEC6AA1AF1ABFBEA7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -171,6 +227,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DB5134472483A40F00BAD887 /* Build configuration list for PBXNativeTarget "calpro_prototypeTests" */;
 			buildPhases = (
+				81DB5C714231A99E92FA537B /* [CP] Check Pods Manifest.lock */,
 				DB51342C2483A40F00BAD887 /* Sources */,
 				DB51342D2483A40F00BAD887 /* Frameworks */,
 				DB51342E2483A40F00BAD887 /* Resources */,
@@ -189,9 +246,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DB51344A2483A40F00BAD887 /* Build configuration list for PBXNativeTarget "calpro_prototypeUITests" */;
 			buildPhases = (
+				90563433D59EB13D581D0947 /* [CP] Check Pods Manifest.lock */,
 				DB5134372483A40F00BAD887 /* Sources */,
 				DB5134382483A40F00BAD887 /* Frameworks */,
 				DB5134392483A40F00BAD887 /* Resources */,
+				0EDA4E3FE750CDBA4DC5BD39 /* [CP] Embed Pods Frameworks */,
+				843E4B253D97769E300A7ABA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -251,6 +311,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB5134282483A40E00BAD887 /* LaunchScreen.storyboard in Resources */,
+				DB1DE821248756B100A2B5EC /* GoogleService-Info.plist in Resources */,
 				DB5134252483A40E00BAD887 /* Assets.xcassets in Resources */,
 				DB5134232483A40A00BAD887 /* Main.storyboard in Resources */,
 			);
@@ -272,15 +333,154 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0EDA4E3FE750CDBA4DC5BD39 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-calpro_prototype-calpro_prototypeUITests/Pods-calpro_prototype-calpro_prototypeUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-calpro_prototype-calpro_prototypeUITests/Pods-calpro_prototype-calpro_prototypeUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-calpro_prototype-calpro_prototypeUITests/Pods-calpro_prototype-calpro_prototypeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		81DB5C714231A99E92FA537B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-calpro_prototypeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		843E4B253D97769E300A7ABA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-calpro_prototype-calpro_prototypeUITests/Pods-calpro_prototype-calpro_prototypeUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-calpro_prototype-calpro_prototypeUITests/Pods-calpro_prototype-calpro_prototypeUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-calpro_prototype-calpro_prototypeUITests/Pods-calpro_prototype-calpro_prototypeUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90563433D59EB13D581D0947 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-calpro_prototype-calpro_prototypeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C5AE10AB3D53725CD5B7032 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-calpro_prototype/Pods-calpro_prototype-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-calpro_prototype/Pods-calpro_prototype-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-calpro_prototype/Pods-calpro_prototype-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA265F1DEC6AA1AF1ABFBEA7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-calpro_prototype/Pods-calpro_prototype-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-calpro_prototype/Pods-calpro_prototype-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-calpro_prototype/Pods-calpro_prototype-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F195E70F8C40298BDBA62C35 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-calpro_prototype-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DB5134112483A40A00BAD887 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB5134582483DBE900BAD887 /* DiscoverViewController.m in Sources */,
-				DB5134612483E3BB00BAD887 /* PlanViewController.m in Sources */,
+				DB5134582483DBE900BAD887 /* DiscoverTabViewController.m in Sources */,
+				DB5134612483E3BB00BAD887 /* StoreTabViewController.m in Sources */,
 				DB51341A2483A40A00BAD887 /* AppDelegate.m in Sources */,
 				DB51342B2483A40E00BAD887 /* main.m in Sources */,
+				DB81C9B12487662300925420 /* NewStoreItemViewController.m in Sources */,
+				DB1DE81F2487544700A2B5EC /* CurrentPlanScreenViewController.m in Sources */,
 				DB51341D2483A40A00BAD887 /* SceneDelegate.m in Sources */,
 				DB51344F2483A43C00BAD887 /* StartScreenViewController.m in Sources */,
 			);
@@ -449,6 +649,7 @@
 		};
 		DB5134452483A40F00BAD887 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EC0FBA1B25D258485B27F96 /* Pods-calpro_prototype.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -465,6 +666,7 @@
 		};
 		DB5134462483A40F00BAD887 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8A67AAF97B7AEDD49786329 /* Pods-calpro_prototype.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -481,6 +683,7 @@
 		};
 		DB5134482483A40F00BAD887 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13C3D7AB2296024735F79245 /* Pods-calpro_prototypeTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -500,6 +703,7 @@
 		};
 		DB5134492483A40F00BAD887 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86B5682DEB1B9BD67565D9CA /* Pods-calpro_prototypeTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -519,6 +723,7 @@
 		};
 		DB51344B2483A40F00BAD887 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DF9DF90B283DD2635A21B70 /* Pods-calpro_prototype-calpro_prototypeUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = calpro_prototypeUITests/Info.plist;
@@ -536,6 +741,7 @@
 		};
 		DB51344C2483A40F00BAD887 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8966D9C5D0048A881BD103E6 /* Pods-calpro_prototype-calpro_prototypeUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = calpro_prototypeUITests/Info.plist;
