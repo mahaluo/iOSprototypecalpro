@@ -10,7 +10,8 @@
 
 @interface CurrentPlanScreenViewController ()
 {
-    NSArray *planMeals;
+    NSMutableArray *activeMeals;
+    NSTimer* statusTimer;
 }
 @end
 
@@ -24,10 +25,8 @@ static NSString * const reuseIdentifier = @"Cell";
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     _ref = [[FIRDatabase database] reference];
-    
-    planMeals = @[
-        @[@"user_meal_2",
-          @"user_meal_4"]];
+    _userid = [FIRAuth auth].currentUser.uid;
+
     
     self.planNameLabel.text = [NSString stringWithFormat:@"name: %@", _currentPlan.plan_name];
     self.planKcalLabel.text = [NSString stringWithFormat:@"daily kcal: %@", _currentPlan.plan_kcal];
@@ -35,7 +34,9 @@ static NSString * const reuseIdentifier = @"Cell";
     
     NSLog(@"current plan name, %@", _currentPlan.plan_name);
     NSLog(@"current plan key, %@", _planKey);
-
+    
+    statusTimer = [NSTimer scheduledTimerWithTimeInterval:0.0f target:self selector:@selector(checkStatus:) userInfo:nil repeats:YES];
+    
     [self getMeals];
     
     self.PlanMealsCollectionView.dataSource = self;
@@ -53,12 +54,12 @@ static NSString * const reuseIdentifier = @"Cell";
  */
 
 -(void)getMeals {
-   
+    
     @try {
         FIRDatabaseReference *userPlanRef = [[[[self.ref child:_userid] child:@"plans"] child:_planKey] child:@"meals"];
         NSLog(@"firebase ref");
         NSLog(@"%@", userPlanRef);
-        planMeals = [[NSMutableArray alloc] init];
+        activeMeals = [[NSMutableArray alloc] init];
         
         [userPlanRef
          observeEventType:FIRDataEventTypeValue
@@ -72,6 +73,7 @@ static NSString * const reuseIdentifier = @"Cell";
                 
                 NSLog(@"%@", child.key);
                 NSLog(@"%@", child.value[@"meal_name"]);
+                [self->activeMeals addObject:child.value[@"meal_name"]];
             }
             
         }];
@@ -85,24 +87,33 @@ static NSString * const reuseIdentifier = @"Cell";
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     //#warning Incomplete implementation, return the number of items
-    return [[planMeals objectAtIndex:section] count];
+    if ([activeMeals count] == 0) {
+        NSLog(@"activeMeals was 0, number of items is 1");
+        return 1;
+    }
+    else {
+        NSLog(@"activeMeals was not 0, number of items from array");
+        return [activeMeals count];
+    }
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     
     // Configure the cell
-    UIImageView* imageView = [[UIImageView alloc] initWithFrame:cell.frame];
-    imageView.image = [UIImage imageNamed:planMeals[indexPath.section][indexPath.item]];
-    imageView.contentMode = UIViewContentModeScaleAspectFill;
-    cell.backgroundView = imageView;
-    
-    cell.tag = indexPath.row;
-    
-    
-    UIView* selectionView = [[UIView alloc] initWithFrame:cell.bounds];
-    selectionView.backgroundColor = [UIColor colorWithDisplayP3Red:1 green:1 blue:1 alpha:0.7];
-    cell.selectedBackgroundView = selectionView;
+    if ([activeMeals count] == 0) {
+        UIImageView* imageView = [[UIImageView alloc] initWithFrame:cell.frame];
+        imageView.image = [UIImage imageNamed:@"calpro_logo"];
+        imageView.contentMode = UIViewContentModeScaleAspectFill;
+        cell.backgroundView = imageView;
+    }
+    else {
+        NSLog(@"setting up cell with meal images");
+        UIImageView* imageView = [[UIImageView alloc] initWithFrame:cell.frame];
+        imageView.image = [UIImage imageNamed:activeMeals[indexPath.item]];
+        imageView.contentMode = UIViewContentModeScaleAspectFill;
+        cell.backgroundView = imageView;
+    }
     
     return cell;
 }
@@ -125,6 +136,20 @@ static NSString * const reuseIdentifier = @"Cell";
     
     return CGSizeMake(cellSize / 2, cellSize / 2);
     
+}
+
+
+-(void)checkStatus:(NSTimer*)timer
+{
+    NSLog(@"Timer started");
+    
+    if([activeMeals count] != 0)
+    {
+        NSLog(@"meals retrieved");
+        [statusTimer invalidate];
+        statusTimer = nil;
+        [self.PlanMealsCollectionView reloadData];
+    }
 }
 
 @end
