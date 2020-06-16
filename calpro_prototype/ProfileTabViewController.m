@@ -91,11 +91,11 @@
           while (child = [children nextObject]) {
               
               NSLog(@"%@", child.key);
-              _plans = child.key.intValue;
+              self->_plans = child.key.intValue;
           }
            
-        NSLog(@" number of plans found %d", _plans);
-           self.planNumberLabel.text = [NSString stringWithFormat:@"stored plans: %d", _plans];
+            NSLog(@" number of plans found %d", self->_plans);
+            self.planNumberLabel.text = [NSString stringWithFormat:@"stored plans: %d", self->_plans];
         }];
         
         
@@ -127,13 +127,13 @@
           while (child = [children nextObject]) {
               
               NSLog(@"%@", child.key);
-              _meals = child.key.intValue;
+              self->_meals = child.key.intValue;
           }
            
-        NSLog(@" number of meals found %d", _meals);
+            NSLog(@" numbself->er of meals found %d", self->_meals);
             
             
-            self.mealNumberLabel.text = [NSString stringWithFormat:@"stored meals: %d", _meals];
+            self.mealNumberLabel.text = [NSString stringWithFormat:@"stored meals: %d", self->_meals];
         }];
         
         

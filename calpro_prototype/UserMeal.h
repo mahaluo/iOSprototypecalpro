@@ -12,11 +12,18 @@
 @interface UserMeal : NSObject
     
 @property NSString *meal_name;
-@property (nonatomic) double meal_kcal;
-@property (nonatomic) double meal_protein;
-@property (nonatomic) double meal_carbs;
-@property (nonatomic) double meal_fats;
+@property (nonatomic) NSString *meal_kcal;
+@property (nonatomic) NSString *meal_protein;
+@property (nonatomic) NSString *meal_carbs;
+@property (nonatomic) NSString *meal_fats;
 
+
+-(instancetype)initFullMeal:(NSString*) meal_name
+                   andKcal:(NSArray*) meal_kcal
+                    andProtein:(NSString*) meal_protein
+                    andCarbs:(NSString*) meal_carbs
+                    andFats:(NSString*) meal_fats;
+                  
 @end
 
 #endif /* UserMeal_h */

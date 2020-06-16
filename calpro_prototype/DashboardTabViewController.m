@@ -19,9 +19,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    NSLog(@"user id from tab bar controller");
-    NSLog(@"%@", _userid);
 }
 - (IBAction)weightEntryClicked:(id)sender {
   

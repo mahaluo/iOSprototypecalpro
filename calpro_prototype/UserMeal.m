@@ -13,10 +13,10 @@
 
 -(instancetype)
 initFullMeal:(NSString*) meal_name
-andKcal:(double)meal_kcal
-andProtein:(double)meal_protein
-andCarbs:(double)meal_carbs
-andFats:(double)meal_fats {
+andKcal:(NSString*)meal_kcal
+andProtein:(NSString*)meal_protein
+andCarbs:(NSString*)meal_carbs
+andFats:(NSString*)meal_fats {
     
     if (self = [super init]) {
         //initialize self

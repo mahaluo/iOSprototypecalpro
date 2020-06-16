@@ -22,8 +22,6 @@ static NSString * const reuseIdentifier = @"Cell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    NSLog(@"user id from tab bar controller");
-    NSLog(@"%@", _userid);
     
     discoverPlans = @[
     @[@"discover_plan_1",
@@ -61,6 +59,7 @@ static NSString * const reuseIdentifier = @"Cell";
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
 //#warning Incomplete implementation, return the number of items
+      NSLog(@"collection was reloaded, %d", [[discoverPlans objectAtIndex:section] count]);
     return [[discoverPlans objectAtIndex:section] count];
 }
 

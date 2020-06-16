@@ -14,6 +14,8 @@
 		DB1DE821248756B100A2B5EC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB1DE820248756B100A2B5EC /* GoogleService-Info.plist */; };
 		DB44CED62487ECE500772343 /* UserPlan.m in Sources */ = {isa = PBXBuildFile; fileRef = DB44CED52487ECE500772343 /* UserPlan.m */; };
 		DB44CED92487EDA000772343 /* UserMeal.m in Sources */ = {isa = PBXBuildFile; fileRef = DB44CED82487EDA000772343 /* UserMeal.m */; };
+		DB44CEDD248B602D00772343 /* NewMealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB44CEDC248B602D00772343 /* NewMealViewController.m */; };
+		DB44CEE0248B618E00772343 /* NewPlanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB44CEDF248B618E00772343 /* NewPlanViewController.m */; };
 		DB51341A2483A40A00BAD887 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5134192483A40A00BAD887 /* AppDelegate.m */; };
 		DB51341D2483A40A00BAD887 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DB51341C2483A40A00BAD887 /* SceneDelegate.m */; };
 		DB5134232483A40A00BAD887 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB5134212483A40A00BAD887 /* Main.storyboard */; };
@@ -69,6 +71,10 @@
 		DB44CED72487ECFA00772343 /* UserPlan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserPlan.h; sourceTree = "<group>"; };
 		DB44CED82487EDA000772343 /* UserMeal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserMeal.m; sourceTree = "<group>"; };
 		DB44CEDA2487EDAE00772343 /* UserMeal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserMeal.h; sourceTree = "<group>"; };
+		DB44CEDB248B602D00772343 /* NewMealViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewMealViewController.h; sourceTree = "<group>"; };
+		DB44CEDC248B602D00772343 /* NewMealViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewMealViewController.m; sourceTree = "<group>"; };
+		DB44CEDE248B618E00772343 /* NewPlanViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewPlanViewController.h; sourceTree = "<group>"; };
+		DB44CEDF248B618E00772343 /* NewPlanViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewPlanViewController.m; sourceTree = "<group>"; };
 		DB5134152483A40A00BAD887 /* calpro_prototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = calpro_prototype.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB5134182483A40A00BAD887 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DB5134192483A40A00BAD887 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -200,6 +206,10 @@
 				DB44CED72487ECFA00772343 /* UserPlan.h */,
 				DB44CED82487EDA000772343 /* UserMeal.m */,
 				DB44CEDA2487EDAE00772343 /* UserMeal.h */,
+				DB44CEDB248B602D00772343 /* NewMealViewController.h */,
+				DB44CEDC248B602D00772343 /* NewMealViewController.m */,
+				DB44CEDE248B618E00772343 /* NewPlanViewController.h */,
+				DB44CEDF248B618E00772343 /* NewPlanViewController.m */,
 			);
 			path = calpro_prototype;
 			sourceTree = "<group>";
@@ -530,6 +540,7 @@
 				DB81C9B12487662300925420 /* NewStoreItemViewController.m in Sources */,
 				DB81C9B42487935E00925420 /* DashboardTabViewController.m in Sources */,
 				DB1DE81F2487544700A2B5EC /* CurrentPlanScreenViewController.m in Sources */,
+				DB44CEDD248B602D00772343 /* NewMealViewController.m in Sources */,
 				DB81C9BE2487C05800925420 /* ProfileTabViewController.m in Sources */,
 				DB81C9C72487E3C800925420 /* TabBarViewController.m in Sources */,
 				DB81C9C12487C74700925420 /* RegisterScreenViewController.m in Sources */,
@@ -537,6 +548,7 @@
 				DB51341D2483A40A00BAD887 /* SceneDelegate.m in Sources */,
 				DB51344F2483A43C00BAD887 /* StartScreenViewController.m in Sources */,
 				DB44CED62487ECE500772343 /* UserPlan.m in Sources */,
+				DB44CEE0248B618E00772343 /* NewPlanViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

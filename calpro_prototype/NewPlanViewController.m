@@ -1,33 +1,25 @@
 //
-//  TabBarViewController.m
+//  NewPlanViewController.m
 //  calpro_prototype
 //
-//  Created by Max Häggkvist on 3/6/20.
+//  Created by Max Häggkvist on 6/6/20.
 //  Copyright © 2020 Max Häggkvist. All rights reserved.
 //
 
-#import "TabBarViewController.h"
-#import "ProfileTabViewController.h"
-#import "StoreTabViewController.h"
-#import "DiscoverTabViewController.h"
-#import "DashboardTabViewController.h"
+#import "NewPlanViewController.h"
 
-@interface TabBarViewController ()
+@interface NewPlanViewController ()
 
 @end
 
-@implementation TabBarViewController
+@implementation NewPlanViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    NSLog(@"userid from signinviewcontroller");
-    NSLog(@"%@", _userid);
-    
 }
 
-
+/*
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -35,8 +27,6 @@
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
 }
-
-
-
+*/
 
 @end

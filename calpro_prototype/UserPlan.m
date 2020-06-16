@@ -16,10 +16,10 @@
 -(instancetype)
 initFullPlan:(NSString*) plan_name
 andMeals:(NSArray*) plan_meals
-andKcal:(double)plan_kcal
-andProtein:(double)plan_protein
-andCarbs:(double)plan_carbs
-andFats:(double)plan_fats {
+andKcal:(NSString*)plan_kcal
+andProtein:(NSString*)plan_protein
+andCarbs:(NSString*)plan_carbs
+andFats:(NSString*)plan_fats {
     
     if (self = [super init]) {
         //initialize self

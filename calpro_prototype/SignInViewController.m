@@ -57,6 +57,7 @@
             TabBarViewController* tc = [sb instantiateViewControllerWithIdentifier:@"TabBarViewController"];
             tc.userid = authResult.user.uid;
             tc.modalPresentationStyle = UIModalPresentationFullScreen;
+            
             [self presentViewController:tc animated:YES completion:nil];
         }
     
