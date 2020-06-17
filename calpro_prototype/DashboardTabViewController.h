@@ -13,7 +13,13 @@ NS_ASSUME_NONNULL_BEGIN
 @interface DashboardTabViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UIButton *weightEntryButton;
 @property (strong, nonatomic) NSString *userid;
+@property (weak, nonatomic) IBOutlet UINavigationItem *navTitle;
+
+
+
 -(void)setUserid:(NSString * _Nonnull)userid;
+
+
 @end
 
 NS_ASSUME_NONNULL_END

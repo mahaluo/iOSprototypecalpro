@@ -56,6 +56,7 @@ static NSString * const reuseIdentifier = @"cell";
     for (NSString* meal in _selectedMeals) {
         NSLog(@"adding meal to planmeals");
         [planMeals addObject:meal];
+        self.saveButton.enabled = YES;
     }
     
     
@@ -63,6 +64,7 @@ static NSString * const reuseIdentifier = @"cell";
 }
 
 - (IBAction)savePlanClicked:(id)sender {
+    
 }
 
 - (void) getMeals {
@@ -118,6 +120,67 @@ static NSString * const reuseIdentifier = @"cell";
     }
 }
 
+- (IBAction)saveButtonClicked:(id)sender {
+    
+    if(self.planNameField.text.length == 0) {
+        
+        UIAlertController* addAlert;
+        
+        addAlert = [UIAlertController
+                    alertControllerWithTitle:@"oops!"
+                    message:@"please enter a name"
+                    preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction* okAction = [UIAlertAction
+                                   actionWithTitle:@"ok"
+                                   style:UIAlertActionStyleDefault
+                                   handler:^(UIAlertAction * action) {
+        }];
+        
+        [addAlert addAction:okAction];
+        [self presentViewController:addAlert animated:YES completion:nil];
+    }
+    else if ([planMeals count] == 0){
+        UIAlertController* addAlert;
+        
+        addAlert = [UIAlertController
+                    alertControllerWithTitle:@"oops!"
+                    message:@"atleast add one meal?"
+                    preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction* okAction = [UIAlertAction
+                                   actionWithTitle:@"ok"
+                                   style:UIAlertActionStyleDefault
+                                   handler:^(UIAlertAction * action) {
+        }];
+        
+        [addAlert addAction:okAction];
+        [self presentViewController:addAlert animated:YES completion:nil];
+    }
+    else {
+        UIAlertController* addAlert;
+        
+        addAlert = [UIAlertController
+                    alertControllerWithTitle:@"saving plan"
+                    message:self.planNameField.text
+                    preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction* okAction = [UIAlertAction
+                                   actionWithTitle:@"ok"
+                                   style:UIAlertActionStyleDefault
+                                   handler:^(UIAlertAction * action) {
+        }];
+        UIAlertAction* cancelAction = [UIAlertAction
+                                       actionWithTitle:@"cancel"
+                                       style:UIAlertActionStyleDefault
+                                       handler:^(UIAlertAction * action) {
+        }];
+        
+        [addAlert addAction:okAction];
+        [addAlert addAction:cancelAction];
+        [self presentViewController:addAlert animated:YES completion:nil];
+    }
+}
 
 
 
@@ -187,7 +250,7 @@ static NSString * const reuseIdentifier = @"cell";
         }
     }
     else {
-         NSLog(@"collection was plans");
+        NSLog(@"collection was plans");
         if ([planMeals count] == 0) {
             UIImageView* imageView = [[UIImageView alloc] initWithFrame:cell.frame];
             imageView.image = [UIImage imageNamed:@"calpro_logo"];
